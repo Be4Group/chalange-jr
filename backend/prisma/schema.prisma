@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum ClientStatus {
+  ACTIVE
+  INACTIVE
+}
+
+model Client {
+  id        String       @id @default(uuid())
+  nome      String
+  email     String       @unique
+  telefone  String
+  documento String       @unique
+  status    ClientStatus @default(ACTIVE)
+  createdAt DateTime     @default(now())
+  @@map("clients")
+}
