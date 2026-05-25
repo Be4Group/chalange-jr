@@ -38,16 +38,26 @@ README.md
 
 ## Frontend — checklist
 
-### Listagem (`/clients`)
-- [x] ClientListPage + ClientFilters + ClientTable
-- [ ] useClients: loading, erro, lista (integração API)
-- [x] Confirmação antes de excluir (ConfirmDeleteDialog)
+> Referência de arquitetura em `frontend/examples/` (arquivos `.example` — não são rotas reais).
 
-### Formulário (`/clients/new`, `/clients/:id/edit`)
-- [x] ClientForm + páginas create/edit
-- [x] Validações: obrigatórios, email válido (estrutura pronta)
-- [ ] Feedback sucesso/erro via API real
+### Rotas (candidato cria em `app/`)
+- [ ] `app/clients/page.tsx` — listagem
+- [ ] `app/clients/new/page.tsx` — cadastro
+- [ ] `app/clients/[id]/edit/page.tsx` — edição
+
+### Listagem
+- [ ] AppHeader + ClientFilters + ClientTable
+- [ ] useClients: loading, erro, lista, filtros
+- [ ] ConfirmDeleteDialog antes de excluir
+
+### Formulário
+- [ ] ClientForm (create e edit)
+- [ ] Validações: obrigatórios, email válido, telefone, documento
 - [ ] useClientForm: create, update, load por id
+- [ ] Feedback sucesso/erro + loading nas requests
+
+### Infra front
+- [ ] `lib/types.ts` e `lib/api.ts`
 
 ## O que será avaliado além do funcionamento
 - Código na camada certa

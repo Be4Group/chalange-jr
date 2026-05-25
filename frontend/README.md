@@ -1,30 +1,16 @@
 # Frontend — Desafio CRUD de Clientes
 
-Base em **Next.js (App Router)** + **Tailwind CSS** para o candidato implementar a integração com a API.
+Projeto **Next.js** inicializado. A implementação é responsabilidade do candidato.
 
-## Estrutura
+## O que já existe
 
-```
-src/
-  app/clients/          # Listagem, cadastro e edição
-  components/clients/   # UI reutilizável (tabela, filtros, formulário)
-  hooks/                # useClients, useClientForm (com TODOs)
-  lib/                  # Tipos e cliente HTTP (api.ts pronto)
-```
+- Next.js + Tailwind configurados
+- Página inicial (`app/page.tsx`) com instruções do desafio
+- Pasta `examples/` com arquivos `.example` mostrando a arquitetura esperada
 
-## O que já está pronto
+## O que o candidato deve criar
 
-- Layout, header e rotas (`/clients`, `/clients/new`, `/clients/:id/edit`)
-- Componentes de listagem, filtros, tabela, formulário e confirmação de exclusão
-- Cliente HTTP em `src/lib/api.ts`
-- Validações básicas no formulário (`useClientForm`)
-
-## O que o candidato deve implementar
-
-Ver comentários `TODO` em:
-
-- `src/hooks/useClients.ts`
-- `src/hooks/useClientForm.ts`
+Todas as rotas, componentes, hooks e integração com a API. Use `examples/` e `arquitetura.md` como guia.
 
 ## Como rodar
 

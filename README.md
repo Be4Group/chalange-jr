@@ -81,14 +81,14 @@ Copie os exemplos e ajuste conforme seu ambiente:
 
 O **repository**, **controller**, **DTOs** e **schema Prisma** já estão prontos.
 
-### Frontend (`frontend/src/hooks/`)
+### Frontend (candidato implementa tudo)
 
-- [ ] `useClients` — integrar listagem e exclusão
-- [ ] `useClientForm` — integrar create/update e load na edição
+- [ ] Rotas: `/clients`, `/clients/new`, `/clients/[id]/edit`
+- [ ] Componentes, hooks, `lib/api.ts`, validações e UX
 
-Componentes, rotas e cliente HTTP (`lib/api.ts`) já estão prontos.
+Apenas o Next.js base e exemplos de arquitetura em `frontend/examples/` estão prontos.
 
-Consulte também o checklist em [arquitetura.md](./arquitetura.md).
+Consulte o checklist em [arquitetura.md](./arquitetura.md).
 
 ## Regras de negócio
 
